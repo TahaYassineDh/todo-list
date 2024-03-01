@@ -39,6 +39,9 @@ const deleteCheck = (e) => {
   if (item.classList[0] == "trash-btn") {
     item.parentElement.remove();
   }
+  if(item.classList[0] == "complete-btn") {
+    item.parentElement.classList.toggle("completed");
+  }
 };
 
 // Event Listeners
